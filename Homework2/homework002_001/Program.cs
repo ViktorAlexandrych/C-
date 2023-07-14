@@ -1,9 +1,14 @@
-﻿Console.WriteLine("Введите трехзначное число.");
-while (true)
+﻿int Prompt(string msg)
 {
-	string input = Console.ReadLine();
-	if (!input.Equals("Back"))
-		Console.WriteLine("{0}->{1}", input, input[1]);
-	else
-		break;
+	Console.WriteLine($"{msg}");
+	return Convert.ToInt32(Console.ReadLine());
 }
+int number = Prompt("Введи трехзначное число");
+if (number < 100 || number >= 1000)
+{
+	Console.WriteLine("Не обманывай. Пиши трехзначное число");
+	return;
+}
+Console.WriteLine($"{number}");
+int secondRank = number / 10 % 10;
+Console.WriteLine($"{secondRank}");
