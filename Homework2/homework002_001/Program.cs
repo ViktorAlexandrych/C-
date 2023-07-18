@@ -11,4 +11,4 @@ if (number < 100 || number >= 1000)
 }
 Console.WriteLine($"{number}");
 int secondRank = number / 10 % 10;
-Console.Write($"{secondRsaank}");
+Console.WriteLine($"{secondRank}");
