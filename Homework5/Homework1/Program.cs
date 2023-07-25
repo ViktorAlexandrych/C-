@@ -16,14 +16,14 @@ void GetArray(int a)
 	for (int i = 0; i < a; i++)
 	{
 		randomArray[i] = new Random().Next(10, 1000);
-		Console.Write(randomArray[i] + " ");
+		Console.Write($"[{String.Join("", randomArray[i])}]");
 	}
 
 }
 
 // Ищем количество четных чисел в массиве
 
-int amount(int[] randomArray)
+int GetAmountmount(int[] randomArray)
 {
 	int amount = 0;
 	for (int i = 0; i < randomArray.Length; i++)
@@ -36,4 +36,4 @@ int amount(int[] randomArray)
 
 
 GetArray(a);
-Console.Write($"\nКоличество чётных чисел в массиве: {amount(randomArray)}");
+Console.Write($"\nКоличество чётных чисел в массиве: {GetAmountmount(randomArray)}");
