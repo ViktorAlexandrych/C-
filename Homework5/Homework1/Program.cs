@@ -29,7 +29,7 @@ int amount(int[] randomArray)
 	for (int i = 0; i < randomArray.Length; i++)
 	{
 		if (randomArray[i] % 2 == 0)
-			amount = amount + 1;
+			amount++;
 	}
 	return amount;
 }
